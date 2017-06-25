@@ -1,0 +1,6 @@
+cri-o-runc (1.0.0-rc3-1) unstable; urgency=medium
+
+  * fork packaged for cri-o
+  * binary installed to /usr/lib/cri-o-runc/sbin/
+
+ -- Lokesh Mandvekar <lsm5@fedoraproject.org>  Sat, 25 Jun 2017 00:49:15 -0400

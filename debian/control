@@ -1,0 +1,26 @@
+Source: cri-o-runc
+Section: devel
+Priority: extra
+Maintainer: Debian Go Packaging Team <pkg-go-maintainers@lists.alioth.debian.org>
+Uploaders: Alexandre Viau <alexandre@alexandreviau.net>,
+           Dmitry Smirnov <onlyjob@debian.org>,
+           Tim Potter <tpot@hpe.com>
+Build-Depends: debhelper (>= 9),
+               dh-golang,
+    go-md2man,
+    libapparmor-dev,
+    protobuf-compiler
+Standards-Version: 3.9.8
+Homepage: https://github.com/opencontainers/runc
+Vcs-Git: https://anonscm.debian.org/git/pkg-go/packages/runc.git
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-go/packages/runc.git
+
+Package: cri-o-runc
+Architecture: any
+Depends: ${misc:Depends}, ${shlibs:Depends}
+Breaks: docker.io (<< 1.12)
+Built-Using: ${misc:Built-Using}
+Description: Open Container Project - runtime
+ "runc" is a command line client for running applications packaged according
+ to the Open Container Format (OCF) and is a compliant implementation of
+ the Open Container Project specification.
